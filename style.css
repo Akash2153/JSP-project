@@ -1,0 +1,149 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(38, 174, 174);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.nav-1 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-1 ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-1 ul li {
+    margin: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav img {
+    height: 100px;
+    width: auto;
+}
+
+.nav-2 {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.nav-2 i {
+    margin-left: 20px;
+}
+
+.content {
+    display: flex;
+    height: calc(100% - 100px);
+    width: 100%;
+    padding: 20px;
+}
+
+.content-left {
+    width: 40%;
+    padding: 40px;
+}
+
+.content-left h5 {
+    background-color: rgba(81, 166, 115, 0.378);
+    font-size: medium;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.content-left h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.content-left p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 12px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.content-right {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: auto;
+    padding: 20px;
+    width: 60%;
+}
+
+.content-right::-webkit-scrollbar {
+    display: none;
+}
+
+.product {
+    height: 400px;
+    width: 250px;
+    background-color:  rgb(85, 153, 153);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.product img {
+    height: 60%;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.category, .color, .price {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: 600;
+}
